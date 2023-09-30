@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 04:26:41 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNDoxNzowMiBQTTsyODAz"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNDoyNjo0MSBQTTsxOzI5MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numwid" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter numbwid&quot;" newline="True"/>
+            <input variable="numwid"/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <if expression="numwid&gt;10000">
+                <then>
+                    <assign variable="price" expression="10*numwid"/>
+                </then>
+                <else>
+                    <if expression="numwid&lt;10000||numwid&gt;5000">
+                        <then>
+                            <assign variable="price" expression="20*numwid"/>
+                        </then>
+                        <else>
+                            <assign variable="price" expression="30*numwid"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;extprice&quot;" newline="True"/>
+            <output expression="price" newline="True"/>
+            <output expression="&quot;taxprice&quot;" newline="True"/>
+            <output expression="price*.07" newline="True"/>
+            <output expression="&quot;total&quot;" newline="True"/>
+            <output expression="price+(price*.07)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

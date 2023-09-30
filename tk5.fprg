@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 05:15:07 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNTowNjozNiBQTTsyODA5"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNToxNTowNyBQTTsxOzI5MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="empname" type="String" array="False" size=""/>
+            <output expression="&quot;enter empname&quot;" newline="True"/>
+            <input variable="empname"/>
+            <declare name="salary" type="Real" array="False" size=""/>
+            <output expression="&quot;enter salary&quot;" newline="True"/>
+            <input variable="salary"/>
+            <declare name="joblevel" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter joblevel&quot;" newline="True"/>
+            <input variable="joblevel"/>
+            <declare name="bonrate" type="Real" array="False" size=""/>
+            <if expression="joblevel&gt;=10">
+                <then>
+                    <assign variable="bonrate" expression="salary+(salary*.25)"/>
+                </then>
+                <else>
+                    <if expression="joblevel=5-9">
+                        <then>
+                            <assign variable="bonrate" expression="salary+(salary*.20)"/>
+                        </then>
+                        <else>
+                            <assign variable="bonrate" expression="salary+(salary*.10)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;lastname&quot;" newline="True"/>
+            <output expression="empname" newline="True"/>
+            <output expression="&quot;bonus&quot;" newline="True"/>
+            <output expression="bonrate" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

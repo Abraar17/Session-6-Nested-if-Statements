@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 04:51:01 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNDo0NzowMSBQTTsyODA1"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0zMDswNDo1MTowMSBQTTsxOzI5MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prin" type="Integer" array="False" size=""/>
+            <output expression="&quot;enterprin&quot;" newline="True"/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <output expression="&quot;enteryear&quot;" newline="True"/>
+            <declare name="intrate" type="Real" array="False" size=""/>
+            <if expression="prin&gt;100000">
+                <then>
+                    <assign variable="" expression=""/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
